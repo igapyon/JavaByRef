@@ -10,12 +10,12 @@ package jp.igapyon.javabyref;
  * </p>
  * 
  * <pre>
- * public void myMethod(final ByRef&lt;TargetObj&gt; arg1) {
- *     TargetObj target = arg1.getVal();
+ * public void myMethod(final ByRef&lt;JavaByRefSampleObjForTest&gt; arg1) {
+ *     JavaByRefSampleObjForTest target = arg1.getVal();
  *     try {
  * 
  *         // Actual business code.
- *         target = new TargetObj();
+ *         target = new JavaByRefSampleObjForTest();
  * 
  *     } finally {
  *         arg1.setVal(target);
@@ -28,10 +28,10 @@ package jp.igapyon.javabyref;
  * </p>
  * 
  * <pre>
- * TargetObj target = new TargetObj();
+ * JavaByRefSampleObjForTest target = new JavaByRefSampleObjForTest();
  * 
  * // fill value of ByRef.
- * final ByRef&lt;TargetObj&gt; arg1 = new ByRef&lt;TargetObj&gt;(target);
+ * final ByRef&lt;JavaByRefSampleObjForTest&gt; arg1 = new ByRef&lt;JavaByRefSampleObjForTest&gt;(target);
  * myMethod(arg1);
  * // apply result of ByRef.
  * target = arg1.getVal();
