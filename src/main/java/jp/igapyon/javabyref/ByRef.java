@@ -28,6 +28,8 @@ package jp.igapyon.javabyref;
  * </p>
  * 
  * <pre>
+ * TargetObj target = new TargetObj();
+ * 
  * // fill value of ByRef.
  * final ByRef&lt;TargetObj&gt; arg1 = new ByRef&lt;TargetObj&gt;(target);
  * myMethod(arg1);
